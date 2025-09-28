@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Product card hover effects */
+.product-card:hover .product-overlay {
+  opacity: 1 !important;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Custom pulse animation for flash sale */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* CSS Variables for consistent theming */
+:root {
+  --primary-color: #667eea;
+  --primary-hover: #764ba2;
+  --secondary-color: #ff6b6b;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #f5222d;
+  --text-primary: #1a202c;
+  --text-secondary: #718096;
+  --text-muted: #a0aec0;
+  --border-color: #e2e8f0;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --warning-light: rgba(250, 173, 20, 0.1);
+  --success-light: rgba(82, 196, 26, 0.1);
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-08-22T17:13:44.131545Z",
+  "english_dataset": {
+    "source": "niraliivaghani/flipkart-product-customer-reviews-dataset",
+    "rows_after_normalization": 48802,
+    "class_distribution": {
+      "1": 24401,
+      "0": 24401
+    },
+    "accuracy_nb": 0.8848478639483659
+  },
+  "vietnamese_dataset": {
+    "source": "linhlpv/vietnamese-sentiment-analyst",
+    "rows_after_normalization": 13328,
+    "class_distribution": {
+      "0": 6664,
+      "1": 6664
+    },
+    "accuracy_nb": 0.8837165825387923
+  }
+}

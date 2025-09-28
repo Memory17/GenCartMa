@@ -1,0 +1,26 @@
+{
+  "english": {
+    "dataset": "english_flipkart",
+    "num_samples": 171577,
+    "fields": [
+      "text",
+      "label"
+    ],
+    "label_counts": {
+      "1": 147176,
+      "0": 24401
+    }
+  },
+  "vietnamese": {
+    "dataset": "vietnamese_sentiment",
+    "num_samples": 26742,
+    "fields": [
+      "text",
+      "label"
+    ],
+    "label_counts": {
+      "1": 20078,
+      "0": 6664
+    }
+  }
+}

@@ -1,0 +1,376 @@
+/* Custom Sidebar Styles */
+.custom-sidebar {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-sidebar .ant-layout-sider-children {
+  background: transparent;
+}
+
+/* Prevent horizontal scrollbar and ensure proper layout */
+.ant-layout-sider {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+/* Menu Styles - Enhanced Responsive */
+.custom-sidebar-menu {
+  background: transparent !important;
+}
+
+.custom-sidebar-menu .ant-menu-submenu {
+  background: transparent !important;
+}
+
+.custom-sidebar-menu .ant-menu-submenu-title {
+  height: clamp(52px, 8vw, 56px) !important;
+  line-height: clamp(52px, 8vw, 56px) !important;
+  padding: 0 clamp(16px, 3vw, 20px) !important;
+  margin: clamp(3px, 0.8vw, 4px) clamp(10px, 2vw, 12px) !important;
+  border-radius: clamp(12px, 2vw, 14px) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(102, 126, 234, 0.05) !important;
+  border: 1px solid rgba(102, 126, 234, 0.1) !important;
+  font-size: clamp(14px, 2.2vw, 16px) !important;
+}
+
+.custom-sidebar-menu .ant-menu-submenu-title:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1) 0%,
+    rgba(118, 75, 162, 0.1) 100%
+  ) !important;
+  transform: translateX(clamp(2px, 0.8vw, 4px));
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.custom-sidebar-menu .ant-menu-submenu-open .ant-menu-submenu-title {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1) 0%,
+    rgba(118, 75, 162, 0.1) 100%
+  ) !important;
+  border-color: rgba(102, 126, 234, 0.2) !important;
+}
+
+.custom-sidebar-menu .ant-menu-item {
+  height: clamp(44px, 7vw, 48px) !important;
+  line-height: clamp(44px, 7vw, 48px) !important;
+  padding: 0 clamp(16px, 3vw, 20px) 0 clamp(48px, 8vw, 52px) !important;
+  margin: clamp(1.5px, 0.5vw, 2px) clamp(10px, 2vw, 12px) !important;
+  border-radius: clamp(10px, 1.8vw, 12px) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent !important;
+  overflow: visible !important;
+  border: 1px solid transparent !important;
+  font-size: clamp(13px, 2vw, 15px) !important;
+}
+
+.custom-sidebar-menu .ant-menu-item:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.08) 0%,
+    rgba(118, 75, 162, 0.08) 100%
+  ) !important;
+  transform: translateX(clamp(4px, 1vw, 6px));
+  border-color: rgba(102, 126, 234, 0.15) !important;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+}
+
+.custom-sidebar-menu .ant-menu-item:hover .ant-menu-title-content a {
+  color: #667eea !important;
+}
+
+.custom-sidebar-menu .ant-menu-item:hover .ant-menu-title-content a span {
+  color: #667eea !important;
+}
+
+.custom-sidebar-menu .ant-menu-item-selected {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.12) 0%,
+    rgba(118, 75, 162, 0.12) 100%
+  ) !important;
+  border-color: rgba(102, 126, 234, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.custom-sidebar-menu .ant-menu-item-selected .ant-menu-title-content a {
+  color: #667eea !important;
+  font-weight: 600 !important;
+}
+
+.custom-sidebar-menu .ant-menu-item-selected .ant-menu-title-content a span {
+  color: #667eea !important;
+}
+
+/* Icon hover effects - Enhanced Responsive */
+.custom-sidebar-menu .ant-menu-item:hover .ant-menu-item-icon > div {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  transform: scale(clamp(1.05, 1vw + 1, 1.1));
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.custom-sidebar-menu .ant-menu-item-selected .ant-menu-item-icon > div {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  transform: scale(clamp(1.02, 0.8vw + 1, 1.05));
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.ant-menu-item {
+  overflow: visible !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.ant-menu-item .ant-menu-title-content {
+  overflow: visible !important;
+  text-overflow: ellipsis !important;
+}
+
+.ant-badge {
+  flex-shrink: 0;
+}
+
+/* Custom scrollbar for vertical scroll only - Responsive */
+.custom-sidebar::-webkit-scrollbar {
+  width: clamp(4px, 1vw, 6px);
+}
+
+.custom-sidebar::-webkit-scrollbar-track {
+  background: rgba(102, 126, 234, 0.05);
+  border-radius: clamp(2px, 0.5vw, 3px);
+}
+
+.custom-sidebar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  border-radius: clamp(2px, 0.5vw, 3px);
+  opacity: 0.6;
+}
+
+.custom-sidebar::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}
+
+/* Animation keyframes */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(clamp(1.02, 0.8vw + 1, 1.05));
+    opacity: 0.8;
+  }
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 1200px) {
+  .custom-sidebar-menu .ant-menu-submenu-title {
+    height: 52px !important;
+    line-height: 52px !important;
+    padding: 0 18px !important;
+    margin: 3px 10px !important;
+    font-size: 15px !important;
+  }
+
+  .custom-sidebar-menu .ant-menu-item {
+    height: 46px !important;
+    line-height: 46px !important;
+    padding: 0 18px 0 50px !important;
+    margin: 1.5px 10px !important;
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-sidebar {
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+  }
+
+  .custom-sidebar .ant-layout-sider-collapsed {
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+  }
+
+  /* Hide sidebar completely on medium screens */
+  .ant-layout-sider-collapsed {
+    flex: 0 0 0 !important;
+    max-width: 0 !important;
+    min-width: 0 !important;
+    width: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-sidebar {
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    display: none !important;
+  }
+
+  /* Ensure sidebar is completely hidden on mobile */
+  .ant-layout-sider {
+    flex: 0 0 0 !important;
+    max-width: 0 !important;
+    min-width: 0 !important;
+    width: 0 !important;
+  }
+
+  /* Touch-friendly menu items when sidebar is shown on mobile overlay */
+  .custom-sidebar-menu .ant-menu-submenu-title {
+    height: 56px !important;
+    line-height: 56px !important;
+    padding: 0 20px !important;
+    margin: 4px 12px !important;
+    font-size: 16px !important;
+  }
+
+  .custom-sidebar-menu .ant-menu-item {
+    height: 52px !important;
+    line-height: 52px !important;
+    padding: 0 20px 0 54px !important;
+    margin: 2px 12px !important;
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra touch-friendly for small mobile devices */
+  .custom-sidebar-menu .ant-menu-submenu-title {
+    height: 60px !important;
+    line-height: 60px !important;
+    padding: 0 16px !important;
+    margin: 4px 8px !important;
+    font-size: 15px !important;
+  }
+
+  .custom-sidebar-menu .ant-menu-item {
+    height: 56px !important;
+    line-height: 56px !important;
+    padding: 0 16px 0 48px !important;
+    margin: 2px 8px !important;
+    font-size: 14px !important;
+  }
+
+  /* Adjust badge sizes for mobile */
+  .ant-badge {
+    font-size: 10px !important;
+  }
+
+  .ant-badge-count {
+    min-width: 16px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ultra-compact mobile layout */
+  .custom-sidebar-menu .ant-menu-submenu-title {
+    height: 56px !important;
+    line-height: 56px !important;
+    padding: 0 12px !important;
+    margin: 3px 6px !important;
+    font-size: 14px !important;
+  }
+
+  .custom-sidebar-menu .ant-menu-item {
+    height: 52px !important;
+    line-height: 52px !important;
+    padding: 0 12px 0 44px !important;
+    margin: 1.5px 6px !important;
+    font-size: 13px !important;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .custom-sidebar-menu .ant-menu-submenu-title {
+    height: 60px !important;
+    line-height: 60px !important;
+    padding: 0 20px !important;
+  }
+
+  .custom-sidebar-menu .ant-menu-item {
+    height: 56px !important;
+    line-height: 56px !important;
+    padding: 0 20px 0 56px !important;
+  }
+
+  /* Larger touch targets for icons */
+  .custom-sidebar-menu .ant-menu-item-icon > div {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 18px !important;
+  }
+
+  /* Larger badges for easier visibility */
+  .ant-badge-count {
+    min-width: 20px !important;
+    height: 20px !important;
+    line-height: 20px !important;
+    font-size: 11px !important;
+  }
+}
+
+/* High DPI screen optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .custom-sidebar-menu .ant-menu-item-icon > div {
+    box-shadow: 0 2px 6px rgba(102, 126, 234, 0.2);
+  }
+
+  .custom-sidebar::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Remove default menu borders and backgrounds */
+.custom-sidebar-menu.ant-menu-inline {
+  border-right: none !important;
+}
+
+.custom-sidebar-menu .ant-menu-sub.ant-menu-inline {
+  background: transparent !important;
+  padding: clamp(2px, 0.8vw, 4px) 0 !important;
+}
+
+/* Fix submenu arrow - Responsive */
+.custom-sidebar-menu .ant-menu-submenu-arrow {
+  color: #667eea !important;
+  font-size: clamp(10px, 2vw, 12px) !important;
+  transition: all 0.3s ease;
+}
+
+.custom-sidebar-menu .ant-menu-submenu-open .ant-menu-submenu-arrow {
+  transform: rotate(90deg);
+}
+
+/* Ensure proper text scaling */
+.custom-sidebar-menu .ant-menu-title-content {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.custom-sidebar-menu .ant-menu-item .ant-menu-title-content a {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+/* Loading state responsive improvements */
+.custom-sidebar .ant-spin {
+  font-size: clamp(14px, 2.5vw, 16px) !important;
+}
+
+.custom-sidebar .ant-spin-dot {
+  font-size: clamp(18px, 3vw, 20px) !important;
+}
